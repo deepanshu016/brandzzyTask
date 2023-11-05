@@ -22,7 +22,7 @@ jobs:
         ssh-add ~/.ssh/id_rsa
 
     - name: Install PHP & Composer
-      uses: deepanshu016/brandzzyTask@v2
+      uses: deepanshu016/brandzzyTask
       with:
         php-version: '7.4'
 
