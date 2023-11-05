@@ -22,21 +22,14 @@ jobs:
         ssh-add ~/.ssh/id_rsa
 
     - name: Install PHP & Composer
-      uses: shivammathur/setup-php@v2
+      uses: deepanshu016/setup-php@v2
       with:
         php-version: '7.4'
-
-    - name: Install Node.js and npm
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
 
     - name: Install dependencies
       run: |
         composer install
-        npm install
-        npm run production
 
     - name: Deploy to server
       run: |
-        rsync -avz --delete --exclude .git . your_username@your_server_ip:/path/to/your/laravel/app
+        rsync -avz --delete --exclude .git . deepanshu016@206.189.140.88:/var/www/brandzzy_task/brandzzyTask
