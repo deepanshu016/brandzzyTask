@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5a7d77ff-d054-4cee-bc7e-13be90c9e40b" name="Brandzzy Task">
+        <fileTransfer rootFolder="/var/www/brandzzy_task" accessType="SFTP" host="206.189.140.88" port="22" sshConfigId="591c388a-103c-485f-abf7-eaf32f3fb585" sshConfig="root@206.189.140.88:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
